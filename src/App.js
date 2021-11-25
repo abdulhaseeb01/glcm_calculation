@@ -1,13 +1,14 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import "./App.css";
-import { create, all, zeros, i } from "mathjs";
+import { create, all, zeros } from "mathjs";
 import { useState, useEffect } from "react";
 
 const config = {};
 const math = create(all, config);
 
 function App() {
-  const [inputMatrixWidth, setInputMatrixWidth] = useState(8);
-  const [GLCMPixels, setGLCMPixels] = useState(8);
+  const [inputMatrixWidth] = useState(8);
+  const [GLCMPixels] = useState(8);
 
   const [inputMatrix, setInputMatrix] = useState(math.randomInt([8, 8], 0, 7));
 
