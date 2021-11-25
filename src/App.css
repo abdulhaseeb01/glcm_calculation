@@ -28,11 +28,108 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+table {
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* Matrices */
+div.matrixtable {
+  display: inline-table;
+  border-width: 2px 2px;
+  border-style: solid;
+  border-color: black;
+  text-align: center;
+  vertical-align: top;
+  padding: 0px 1px;
+  margin: 0px 1px;
+  overflow: visible;
+}
+div.vector {
+  display: inline-table;
+  background-color: green;
+  padding: 0px;
+  margin: 0px 1px;
+  border-color: black;
+  border-style: solid;
+  border-width: 2px 2px 2px 0px;
+  vertical-align: top;
+}
+div.vector div {
+  display: block;
+  margin: 1px;
+  padding: 5px 15px;
+  background-color: #bdb76b;
+  font-size: 18px;
+  font-weight: bold;
+}
+div.matrixtable .vector {
+  border-style: none;
+}
+div.transpose {
+  display: table;
+  margin: 1px;
+  background-color: green;
+}
+div.transpose div {
+  display: table-cell;
+  margin: 1px;
+  padding: 2px;
+  background-color: #bdb76b;
+}
+
+div.matrixtable:before {
+  content: " ";
+  background-color: white;
+  width: 85%;
+  text-align: center;
+  height: 2px;
+  position: relative;
+  top: -2px;
+  z-index: 100;
+  display: block;
+  margin: 0px auto;
+}
+div.matrixtable:after {
+  content: " ";
+  background-color: white;
+  width: 85%;
+  text-align: center;
+  height: 2px;
+  position: relative;
+  top: 2px;
+  z-index: 100;
+  display: block;
+  margin: 0px auto;
+}
+
+div.vector:before {
+  content: " ";
+  background-color: white;
+  width: 85%;
+  height: 2px;
+  position: relative;
+  top: -2px;
+  z-index: 100;
+  display: block;
+}
+div.vector:after {
+  content: " ";
+  background-color: white;
+  width: 85%;
+  height: 2px;
+  position: relative;
+  top: 2px;
+  z-index: 100;
+  display: block;
+}
+div.matrixtable div.vector:before {
+  height: 0px;
+}
+div.matrixtable div.vector:after {
+  height: 0px;
 }
