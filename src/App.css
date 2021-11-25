@@ -50,7 +50,7 @@ div.matrixtable {
   overflow: visible;
 }
 div.vector {
-  display: inline-table;
+  display: block;
   background-color: green;
   padding: 0px;
   margin: 0px 1px;
@@ -60,7 +60,7 @@ div.vector {
   vertical-align: top;
 }
 div.vector div {
-  display: block;
+  display: inline-block;
   margin: 1px;
   padding: 5px 15px;
   background-color: #bdb76b;

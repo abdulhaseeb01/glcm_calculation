@@ -97,6 +97,8 @@ function App() {
           math.flatten(firstFilteredMatrix),
           math.flatten(secondFilteredMatrix)
         );
+        console.log(firstFilteredMatrix);
+        console.log(secondFilteredMatrix);
         for (let index = 0; index < glcm1.length; index++) {
           glcm.subset(
             math.index(glcm1[index][0], glcm1[index][1]),
